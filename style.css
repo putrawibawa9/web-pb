@@ -1,0 +1,68 @@
+/* style.css - single shared stylesheet
+   - Ensures white background and accent color rgb(254,0,0)
+   - Provides a few utility classes used by the HTML
+*/
+
+:root{
+  --accent: rgb(254, 0, 0);
+  --accent-500: rgb(254, 0, 0);
+}
+
+html, body {
+  background: white;
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+/* Accent utilities */
+.bg-accent { background-color: var(--accent) !important; }
+.text-accent { color: var(--accent) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+/* Button style using accent */
+.btn-accent {
+  background: var(--accent);
+  color: white;
+  transition: transform .08s ease, box-shadow .08s ease, opacity .08s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-accent:hover { opacity: .95; transform: translateY(-1px); }
+
+/* Nav link base + active state */
+.nav-link {
+  color: #374151; /* neutral text */
+  transition: color .12s ease, background-color .12s ease;
+}
+.nav-link:hover { color: var(--accent); }
+.nav-link.active {
+  color: white !important;
+  background: var(--accent);
+  box-shadow: 0 1px 0 rgba(0,0,0,.04);
+}
+
+/* Social icon */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .25rem;
+  border-radius: .375rem;
+  color: #374151;
+}
+.social-icon:hover {
+  color: white;
+  background: var(--accent);
+}
+
+/* Small responsive tweaks */
+.container { max-width: 1024px; margin-left: auto; margin-right: auto; }
+
+/* Contact form result */
+#contact-result { margin-top: .25rem; }
+
+/* small accessibility focus ring */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(254,0,0,.12);
+}
