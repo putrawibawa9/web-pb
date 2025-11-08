@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kursus Bahasa Inggris Gianyar | Putra Bali English Course</title>
-  <link rel="icon" href="logo.png" type="image/png">
-
+  <link rel="icon" href="images/logo.png" type="image/png">
 
   <meta name="description" content="Putra Bali English Course adalah Kursus Bahasa Inggris di Gianyar dengan program praktis, tutor berpengalaman, dan fokus pada kemampuan berbicara.">
 
@@ -35,34 +34,50 @@
 </head>
 <body class="bg-white text-gray-800 antialiased">
 
-  <!-- NAVBAR -->
-  <header class="shadow-sm">
-    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold">PB</div>
-        <span class="font-semibold text-lg">Putra Bali English Course</span>
-      </a>
+ <!-- NAVBAR -->
+<header class="shadow-sm">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo + Brand -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Logo Putra Bali English Course" class="w-10 h-10 object-contain">
+      <span class="font-semibold text-lg">Putra Bali English Course</span>
+    </a>
 
-      <ul class="hidden md:flex items-center gap-6">
-        <li><a href="index.html" class="nav-link px-2 py-1 rounded-md active">Home</a></li>
-        <li><a href="about.html" class="nav-link px-2 py-1 rounded-md">About</a></li>
-        <li><a href="programs.html" class="nav-link px-2 py-1 rounded-md">Programs</a></li>
-        <li><a href="testimonials.html" class="nav-link px-2 py-1 rounded-md">Testimonials</a></li>
-        <li><a href="contact.html" class="nav-link px-2 py-1 rounded-md">Contact</a></li>
-      </ul>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-6">
+      <li><a href="index.html" class="nav-link px-2 py-1 rounded-md active">Home</a></li>
+      <li><a href="about.html" class="nav-link px-2 py-1 rounded-md">About</a></li>
+      <li><a href="programs.html" class="nav-link px-2 py-1 rounded-md">Programs</a></li>
+      <li><a href="testimonials.html" class="nav-link px-2 py-1 rounded-md">Testimonials</a></li>
+      <li><a href="contact.html" class="nav-link px-2 py-1 rounded-md">Contact</a></li>
+    </ul>
 
-      <div class="md:hidden">
-        <button id="mobile-menu-button" aria-label="Toggle menu" class="p-2 rounded-md border border-gray-200">
-          <svg id="hamburger-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
-          </svg>
-          <svg id="hamburger-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </header>
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden">
+      <button id="mobile-menu-button" aria-label="Toggle menu" class="p-2 rounded-md border border-gray-200">
+        <svg id="hamburger-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+        </svg>
+        <svg id="hamburger-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ✅ Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+    <ul class="px-4 py-4 flex flex-col gap-2">
+      <li><a href="index.html" class="block px-3 py-2 rounded-md hover:bg-gray-100 active">Home</a></li>
+      <li><a href="about.html" class="block px-3 py-2 rounded-md hover:bg-gray-100">About</a></li>
+      <li><a href="programs.html" class="block px-3 py-2 rounded-md hover:bg-gray-100">Programs</a></li>
+      <li><a href="testimonials.html" class="block px-3 py-2 rounded-md hover:bg-gray-100">Testimonials</a></li>
+      <li><a href="contact.html" class="block px-3 py-2 rounded-md hover:bg-gray-100">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
 
   <!-- HERO -->
   <section class="container mx-auto px-4 py-16">
@@ -79,6 +94,47 @@
       </div>
     </div>
   </section>
+
+
+    <!-- NATIVE SPEAKER EXPERIENCE -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <div class="md:flex md:items-center md:gap-10">
+
+        <!-- IMAGES -->
+        <div class="md:w-1/2 grid grid-cols-2 gap-4 mb-10 md:mb-0">
+          <img src="https://via.placeholder.com/500x350?text=Native+Speaker+1" 
+               alt="Sesi berbicara dengan native speaker" 
+               class="rounded-xl shadow-md object-cover w-full h-full hover:scale-105 transition-transform col-span-2 md:col-span-1">
+          <img src="https://via.placeholder.com/500x350?text=Native+Speaker+2" 
+               alt="Kelas percakapan Bahasa Inggris" 
+               class="rounded-xl shadow-md object-cover w-full h-full hover:scale-105 transition-transform">
+          <img src="https://via.placeholder.com/500x350?text=Native+Speaker+3" 
+               alt="Sesi belajar santai bersama native speaker" 
+               class="rounded-xl shadow-md object-cover w-full h-full hover:scale-105 transition-transform">
+        </div>
+
+        <!-- TEXT -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-4 text-accent">Ngobrol Langsung dengan Native Speaker Setiap Hari</h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Di <span class="font-semibold">Putra Bali English Course</span>, kamu tidak hanya belajar dari tutor lokal —
+            tapi juga mendapatkan kesempatan berbicara langsung dengan <span class="font-semibold">native speaker</span> 
+            yang datang setiap hari. Kamu bisa melatih listening, aksen, dan natural speaking dengan cara yang menyenangkan.
+          </p>
+          <p class="text-gray-700 mb-8 leading-relaxed">
+            Latihan rutin bersama mereka membantu kamu memahami ekspresi alami, budaya komunikasi, 
+            dan meningkatkan rasa percaya diri saat berbicara Bahasa Inggris di dunia nyata.
+          </p>
+          <a href="about.html" 
+             class="inline-block bg-accent text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-red-700 transition">
+             Pelajari Program Kami →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ABOUT PREVIEW -->
   <section class="bg-gray-50 py-16">
@@ -168,35 +224,100 @@
     </div>
   </section>
 
-  <!-- MAP -->
+  <!-- COMPANY PROFILE PROMO -->
+  <!-- <section class="bg-gray-900 text-white py-12 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Tertarik dengan Dunia Coding & Teknologi?</h2>
+      <p class="max-w-2xl mx-auto mb-6 text-gray-300">
+        Kenali <span class="font-semibold text-white">Putra Bali Koding</span> — cabang teknologi kami yang fokus pada pelatihan pemrograman, pembuatan website, dan digital solution di Bali.
+      </p>
+      <a href="https://putrabalikoding.site" target="_blank" 
+         class="inline-block bg-white text-gray-900 font-semibold px-8 py-3 rounded-md shadow hover:bg-gray-100 transition">
+         🌐 Lihat Company Profile Putra Bali Koding
+      </a>
+    </div>
+  </section> -->
+
+  <!-- MAP (DUA CABANG) -->
   <section class="container mx-auto px-4 py-16 text-center">
     <h2 class="text-3xl font-bold mb-4">Lokasi Kami</h2>
-    <p class="mb-6 text-gray-700">Kunjungi kami langsung di Gianyar, Bali</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.3338807217243!2d115.279!3d-8.538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzInMTYuOCJTIDExNcKwMTYnNDQuNCJF!5e0!3m2!1sid!2sid!4v0000000000000"
-      class="w-full h-64 rounded-lg border-0" loading="lazy"></iframe>
+    <p class="mb-10 text-gray-700">Kunjungi salah satu dari dua cabang kami di Sukawati dan Singapadu, Bali.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Cabang 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 border">
+        <h3 class="text-xl font-semibold mb-2 text-accent">Cabang Utama Sukawati </h3>
+        <p class="text-gray-700 mb-4">Jl. Lettu Nengah Duaji 1, Gang Murai no 7b, Sukawati, Gianyar</p>
+        <iframe 
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4679.5554469598455!2d115.27483597576102!3d-8.595618787278223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23fabaa10025d%3A0xd6f89eaa5a8a87b4!2sPutra%20Bali%20english%20course!5e1!3m2!1sen!2sid!4v1762614627897!5m2!1sen!2sid"
+          class="w-full h-64 rounded-lg border-0" loading="lazy"></iframe>
+      </div>
+
+
+      <!-- Cabang 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 border">
+        <h3 class="text-xl font-semibold mb-2 text-accent">Cabang Singapadu</h3>
+        <p class="text-gray-700 mb-4">Jl. Selat 12, Celuk, Kec. Sukawati, Kabupaten Gianyar</p>
+        <iframe 
+           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d292.4732346644503!2d115.2671911057563!3d-8.594297755643106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sid!4v1762614776093!5m2!1sen!2sid"
+          class="w-full h-64 rounded-lg border-0" loading="lazy"></iframe>
+      </div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
+
+   <!-- FOOTER -->
   <footer class="border-t">
     <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row md:justify-between items-start gap-6">
+
+      <!-- INFO UTAMA -->
       <div>
-        <h3 class="font-semibold mb-2">Putra Bali English Course</h3>
-        <p class="text-sm text-gray-600 mb-2">Jl. Raya Gianyar No. 123, Bali</p>
-        <p class="text-sm text-gray-600">WA: 0812-3456-7890</p>
+        <h3 class="font-semibold mb-2 text-accent">Putra Bali English Course</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          Jl. Lettu Nengah Duaji 1, Gang Murai No. 7B, Sukawati, Gianyar
+        </p>
+
+        <p class="text-sm text-gray-600">
+          📞 <a href="https://wa.me/6285738108556" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp 1" class="hover:underline">
+          +62 857-3810-8556</a><br>
+          📞 <a href="https://wa.me/62895623318043" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp 2" class="hover:underline">
+          +62 895-623-318-043</a>
+        </p>
       </div>
-      <div class="flex gap-4">
-        <a href="#" aria-label="Facebook" class="social-icon" title="Facebook">
-          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.2c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9H19l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/></svg>
+
+      <!-- SOSIAL MEDIA -->
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/putra.wibawa.359/" aria-label="Facebook" class="social-icon hover:text-accent" title="Facebook">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.2c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9H19l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/>
+          </svg>
         </a>
-        <a href="#" aria-label="Instagram" class="social-icon" title="Instagram">
-          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3A4.7 4.7 0 1 0 16.7 13 4.7 4.7 0 0 0 12 8.3zM18.4 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/putrabali.englishcourse/" aria-label="Instagram" class="social-icon hover:text-accent" title="Instagram">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3A4.7 4.7 0 1 0 16.7 13 4.7 4.7 0 0 0 12 8.3zM18.4 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@mr.putra_tutor" aria-label="TikTok" class="social-icon hover:text-accent" title="TikTok">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c0 .6 0 1.2.1 1.9.3 2 1.5 3.6 3.4 4.3.5.2 1 .3 1.5.4v2.8c-.8 0-1.6-.1-2.3-.3v5.1a6 6 0 1 1-6-6 6.3 6.3 0 0 1 1.4.1v2.8a3.5 3.5 0 1 0 3.5 3.5V2h-1.6z"/>
+          </svg>
         </a>
       </div>
     </div>
+
     <div class="bg-gray-50 text-gray-600 text-sm py-3">
-      <div class="container mx-auto px-4 text-center">&copy; <span id="year"></span> Putra Bali English Course — All rights reserved.</div>
+      <div class="container mx-auto px-4 text-center">
+        &copy; <span id="year"></span> Putra Bali English Course — All rights reserved.
+      </div>
     </div>
   </footer>
+
+
 
 </body>
 </html>
